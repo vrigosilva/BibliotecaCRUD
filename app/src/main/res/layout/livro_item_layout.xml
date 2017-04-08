@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@mipmap/ic_livro"
+        android:id="@+id/ivItemCapa"/>
+
+    <TextView
+        android:id="@+id/tvItemTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivItemCapa"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvItemAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivItemCapa"
+        android:layout_below="@+id/tvItemTitulo"
+        android:layout_marginLeft="8dp"
+        android:textStyle="italic"/>
+
+
+    <TextView
+        android:id="@+id/tvPag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivItemCapa"
+        android:layout_below="@id/tvItemAutor"
+        android:layout_marginLeft="8dp"
+       android:text="@string/pag"/>
+
+    <TextView
+        android:id="@+id/tvItemPaginas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvPag"
+        android:layout_below="@id/tvItemAutor"
+        android:layout_marginLeft="8dp"/>
+
+
+</RelativeLayout>

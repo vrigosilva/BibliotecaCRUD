@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="sua_biblioteca_pessoal">Sua biblioteca Pessoal</string>
+    <string name="nacional">Nacional</string>
+    <string name="estrangeiro">Estrangeiro</string>
+    <string name="isbn">ISBN</string>
+    <string name="salvar">Salvar</string>
+    <string name="pag">Pag.</string>
+    <string name="novo_livro">Novo Livro</string>
+    <string name="sair">Sair</string>
+</resources>
