@@ -88,11 +88,17 @@ public class MainActivity extends AppCompatActivity
             novoLivro();
         } else if (id == R.id.nav_sair) {
             sair();
+        } else if (id == R.id.nav_sobre) {
+            sobre();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void sobre() {
+        startActivity(new Intent(MainActivity.this,  SobreActivity.class));
     }
 
 

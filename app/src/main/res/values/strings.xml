@@ -4,13 +4,16 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configuração</string>
     <string name="sua_biblioteca_pessoal">Sua biblioteca Pessoal</string>
     <string name="nacional">Nacional</string>
     <string name="estrangeiro">Estrangeiro</string>
-    <string name="isbn">ISBN</string>
+    <string name="isbn" translatable="false">ISBN</string>
     <string name="salvar">Salvar</string>
-    <string name="pag">Pag.</string>
+    <string name="pag" translatable="false">Pag.</string>
     <string name="novo_livro">Novo Livro</string>
     <string name="sair">Sair</string>
+    <string name="sobre">Sobre</string>
+    <string name="desenvolvedor">Desenvolvedor: Vinicius Rigo</string>
+    <string name="versao">Versão: 0.0.1</string>
 </resources>
