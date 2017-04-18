@@ -1,6 +1,7 @@
 package br.com.fiap.biblioteca;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -123,7 +124,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void novoLivro() {
-        startActivityForResult(new Intent(MainActivity.this,  NovoLivroActivity.class),  Constants.NOVO_LIVRO);
+        startActivityForResult(new Intent(MainActivity.this,  NovoLivroActivity.class),  C.NOVO_LIVRO);
     }
 
     private void removeLivro(RecyclerView.ViewHolder viewHolder){
@@ -140,10 +141,14 @@ public class MainActivity extends AppCompatActivity
     private void onClickLivro(List<Livro> livros, int position){
         Intent i = new Intent(MainActivity.this,  NovoLivroActivity.class);
         i.putExtra("livro",  livros.get(position));
-        startActivityForResult(i,  Constants.EDITA_LIVRO);
+        startActivityForResult(i,  C.EDITA_LIVRO);
     }
 
     private void sair() {
+        SharedPreferences pref = getSharedPreferences(C.KEY_APP_PREFERENCES, MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString(C.KEY_LOGIN, "");
+        editor.apply();
         finish();
     }
 
